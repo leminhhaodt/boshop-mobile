@@ -1,0 +1,128 @@
+@import url("https://fonts.cdnfonts.com/css/sf-pro-display");
+body {
+  font-family: "SF Pro Display", sans-serif !important;
+}
+
+.support .support__wrapper {
+  padding: 25px 3px 25px 5px;
+  background: #fff5f5;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  --columns: 2;
+  --gap: 30px;
+  --spacing: calc(((var(--columns) - 1) * var(--gap)) / var(--columns));
+  gap: var(--gap);
+}
+.support .support-item {
+  width: calc((100% / var(--columns)) - var(--spacing));
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  color: #000000;
+  align-items: center;
+}
+.support .support-item__image img {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+.support .support-item h1 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  padding-top: 6px;
+}
+.support .support-item p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  margin-bottom: 0;
+}
+
+/* FOOTER */
+.footer {
+  padding: 28px 16px 24px 16px;
+  color: #000000;
+}
+.footer .footer-heading {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+}
+.footer .footer-item__link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #000000 !important;
+  transition: color 0.24s linear;
+}
+.footer .footer-item__link:hover {
+  color: #d4457f !important;
+}
+.footer .footer-item {
+  gap: 16px;
+}
+.footer p {
+  margin: 16px 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
+}
+.footer .footer-heading,
+.footer-item {
+  margin-bottom: 16px;
+}
+.footer .footer-form {
+  background: #c83f51;
+  display: flex;
+  justify-content: space-between;
+  max-width: 393px;
+  width: 100%;
+  position: relative;
+  height: 43px;
+  margin-bottom: 17px;
+  border-radius: 10px;
+}
+.footer .footer-form::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 50px;
+  background-color: white;
+}
+.footer .footer-form input {
+  border-radius: 10px;
+  border: 1px solid #d8d8d8;
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  font-family: inherit;
+  outline: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #848484;
+  padding: 8px 15px;
+  z-index: 10;
+}
+.footer .footer-form button {
+  background: transparent;
+  border-radius: 10px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+  outline: none;
+  border: none;
+  padding: 8px 15px;
+}
+.footer .footer-confirm {
+  margin-top: 30px;
+  display: block;
+}
